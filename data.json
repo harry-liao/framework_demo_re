@@ -1,0 +1,66 @@
+{
+    "project": "MBU",
+    "timestamp": 123.456,
+    "gem_instances": [
+        {
+            "name": "ISPBE_AXI_0",
+            "elapsed_cycle_count": 531227,
+            "counters": [
+                { "READ_REQ_TRANSFERS": 334123 },
+                { "WRITE_REQ_TRANSFERS": 312354 },
+                { "READ_REQ_BLOCKED": 0 },
+                { "WRITE_REQ_BLOCKED": 312 },
+                { "TOTAL_READ_LATENCY": 0 },
+                { "TOTAL_WRITE_LATENCY": 134412 }
+            ]
+        },
+        {
+            "name": "ISPBE_AXI_1",
+            "elapsed_cycle_count": 531227,
+            "counters": [
+                { "READ_REQ_TRANSFERS": 334123 },
+                { "WRITE_REQ_TRANSFERS": 312354 },
+                { "READ_REQ_BLOCKED": 0 },
+                { "WRITE_REQ_BLOCKED": 312 },
+                { "TOTAL_READ_LATENCY": 0 },
+                { "TOTAL_WRITE_LATENCY": 134412 }
+            ]
+        },
+        {
+            "name": "ISPBE_AXI_2",
+            "elapsed_cycle_count": 531227,
+            "counters": [
+                { "READ_REQ_TRANSFERS": 334123 },
+                { "WRITE_REQ_TRANSFERS": 312354 },
+                { "READ_REQ_BLOCKED": 0 },
+                { "WRITE_REQ_BLOCKED": 312 },
+                { "TOTAL_READ_LATENCY": 0 },
+                { "TOTAL_WRITE_LATENCY": 134412 }
+            ]
+        },
+        {
+            "name": "ISPBE_AXI_3",
+            "elapsed_cycle_count": 531227,
+            "counters": [
+                { "READ_REQ_TRANSFERS": 334123 },
+                { "WRITE_REQ_TRANSFERS": 312354 },
+                { "READ_REQ_BLOCKED": 0 },
+                { "WRITE_REQ_BLOCKED": 312 },
+                { "TOTAL_READ_LATENCY": 0 },
+                { "TOTAL_WRITE_LATENCY": 134412 }
+            ]
+        },
+        {
+            "name": "ISPBE_AXI_4",
+            "elapsed_cycle_count": 531227,
+            "counters": [
+                { "READ_REQ_TRANSFERS": 334123 },
+                { "WRITE_REQ_TRANSFERS": 312354 },
+                { "READ_REQ_BLOCKED": 0 },
+                { "WRITE_REQ_BLOCKED": 312 },
+                { "TOTAL_READ_LATENCY": 0 },
+                { "TOTAL_WRITE_LATENCY": 134412 }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="column">
+        <div class="row">
+            <h1 id="project"></h1>
+        </div>
+        <div class="row">
+            <div class="depart" id="relative-temp">
+                <div class="square">
+                    <!-- <button class="arrow-down" style="background-color: #f2d3ab;">
+                        <p>SSWRP_<br>CODEC_3P</p>
+                    </button> -->
+                    
+                    <!-- toggle -->
+                    <div id="toggledata" popover>
+                        <h2 id="name"></h2>
+                        <div class="data-box">
+                            <!-- <span>elapsed_cycle_count</span>
+                            <span id="elapsed_cycle_count"></span> -->
+                        </div>
+                        <div class="raw-data">
+                        </div>
+                    </div>
+
+                    <div class="btn" id="ISPBE" style="background-color: #cde0b9;">
+                        <div class="ISPBE_AXI_0">
+                            <input popovertarget="toggledata" type="button" id="ISPBE_AXI_0">
+                        </div>
+                        <div class="ISPBE_AXI_1">
+                            <input popovertarget="toggledata" type="button" id="ISPBE_AXI_1">
+                        </div>
+                        <div class="ISPBE_AXI_2">
+                            <input popovertarget="toggledata" type="button" id="ISPBE_AXI_2">
+                        </div>
+                        <div class="ISPBE_AXI_3">
+                            <input popovertarget="toggledata" type="button" id="ISPBE_AXI_3">
+                        </div>
+                        <div class="ISPBE_AXI_4">
+                            <input popovertarget="toggledata" type="button" id="ISPBE_AXI_4">
+                        </div>
+                        <div class="ISPBE_AXI_5">
+                            <input popovertarget="toggledata" type="button" id="ISPBE_AXI_5">
+                        </div>
+                        <div class="ISPBE_AXI_6">
+                            <input popovertarget="toggledata" type="button" id="ISPBE_AXI_6">
+                        </div>
+                        <div class="arrow-up-temp"></div>
+                        <p>SSWRP_<br>ISPBE</p>
+                    </div>
+
+                    <div class="btn" style="background-color: #cde0b9;">
+                        <div class="GSW_SCL_0"></div>
+                        <div class="GSW_SCL_1"></div>
+                        <div class="arrow-up-temp"></div>
+                        <p>SSWRP_<br>GSW</p>
+                    </div>
+
+                    <!-- <button class="arrow-down" style="background-color: #cde0b9;">
+                        <p>SSWRP_<br>G2D</p>
+                    </button> -->
+                </div>
+                <div class="square">
+                    <div class="btn" style="background-color: #cde0b9;">
+                        <div class="FABMED_IWL_0"></div>
+                        <div class="FABMED_IWL_1"></div>
+                        <div class="arrow-up-temp"></div>
+                        <p>SSWRP_FABMED</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="depart">
+                <div class="square">
+                    <!-- <button class="arrow-down" style="background-color: #f2d3ab;">
+                        <p>SSWRP_<br>DPU</p>
+                    </button> -->
+                    <div class="btn" class="arrow-down" style="background-color: #f2d3ab;">
+                        <div class="ISPFE_AXI_0"></div>
+                        <div class="ISPFE_AXI_1"></div>
+                        <div class="ISPFE_AXI_2"></div>
+                        <div class="ISPFE_AXI_3"></div>
+                        <div class="arrow-up-temp"></div>
+                        <p>SSWRP_<br>ISPFE</p>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="btn" style="background-color: #f2d3ab;">
+                        <p>SSWRP_FABRT</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <!-- <div class="row">
+            <div class="depart">
+                <div class="square">
+                    <button style="background-color: #b8d9ee;">
+                        <p>SSWRP_<br>GPCM</p>
+                    </button>
+                    <button style="background-color: #b9daef;">
+                        <p>SSWRP_<br>LSIO_E</p>
+                    </button>
+                    <button style="background-color: #cde0b9">
+                        <p>SSWRP_<br>INF_TCU</p>
+                    </button>
+                    <button style="background-color: #c5f3ed;">
+                        <p>SSWRP_<br>AURDSP</p>
+                    </button>
+                    <button style="background-color: #ad91b2;">
+                        <p>SSWRP_<br>TPU</p>
+                    </button>
+                    <button style="background-color: #f3d4de;">
+                        <p>SSWRP_<br>GPU</p>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="depart">
+                <div class="square">
+                    <div class="btn" style="background-color: #b9daef;">
+                        <div class="FABHBW_0">
+                        </div>
+                        <div class="FABHBW_1">
+                        </div>
+                        <div class="FABHBW_2">
+                        </div>
+                        <div class="FABHBW_3">
+                        </div>
+                        <p>SSWAP_FABHBW</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- <div class="depart" id="FABSYS">
+                <div class="square">
+                    <button style="background-color: #cde0b9;">
+                        <p>SSWRP_<br>LSIO_S</p>
+                    </button>
+                    <button style="background-color: #ee9949; height: 9em;">
+                        <p>SSWRP_<br>HSIO_S</p>
+                    </button>
+                    <button style="background-color: #cde0b9;">
+                        <p>SSWRP_<br>GPDMA</p>
+                    </button>
+                </div>
+                <button class="wirtemode yellowborder" style="background-color: #cde0b9;">
+                    <p>SSWRP_FABSYS_S</p>
+                </button>
+            </div> -->
+
+            <div class="depart" style="height: 15vw; display: flex; flex-direction: column; justify-content: space-between;">
+                <!-- <div class="square">
+                    <button style="background-color: #d1858a;">
+                        <p>SSWRP_<br>CPU</p>
+                    </button>
+                    <button style="background-color: #b9daef;">
+                        <p>SSWRP_<br>EH</p>
+                    </button>
+                </div> -->
+                <div class="outersquare_column" style="border: 2px solid black; background-color: #b9daef;">
+                    <div class="square">
+                        <div class="btn" style="border: 2px solid #978cb7; background-color: transparent;">
+                            <div class="FABMEM_0">
+                            </div>
+                            <p>FABMEM (fGSLC)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="square">
+                        <div class="mini_square" style="flex-direction: column; ">
+                            <div class="btn" style="background-color: transparent;">
+                                <p>SSWRP_cfg</p>
+                            </div>
+                            <div class="btn" style="background-color: transparent;">
+                                <p>FMC</p>
+                            </div>
+                        </div>
+
+                        <div class="btn" style="background-color: transparent; border: 2px solid #e4ca7d">
+                            <div class="GSLC_0"></div>
+                            <p>GSLC</p>
+                        </div>
+                        <div class="btn" style="background-color: transparent; border: 2px solid #e4ca7d">
+                            <div class="GSLC_1"></div>
+                            <p>GSLC</p>
+                        </div>
+                        <div class="btn" style="background-color: transparent; border: 2px solid #e4ca7d">
+                            <div class="GSLC_2"></div>
+                            <p>GSLC</p>
+                        </div>
+                        <div class="btn" style="background-color: transparent; border: 2px solid #e4ca7d">
+                            <div class="GSLC_3"></div>
+                            <p>GSLC</p>
+                        </div>
+
+                        <div class="mini_square">
+                            <div class="btn" style="background-color: transparent;">
+                                <p>GMC<br>Commeon</p>
+                            </div>
+                            <div class="btn" style="background-color: transparent;">
+                                <p>GSLC<br>CB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>SSWRP_MEMSS</p> 
+                    </div> 
+                </div>
+                <div class="square" style="padding: 0 20rem 0 10rem;">
+                    <div class="btn" style="background-color: #f5beb4; width: 8em;">
+                        <p>SSWRP_<br>GMC</p>
+                    </div>
+                    <div class="btn" style="background-color: #f5beb4; width: 8em;">
+                        <p>SSWRP_<br>GMC</p>
+                    </div>
+                    <div class="btn" style="background-color: #f5beb4; width: 8em;">
+                        <p>SSWRP_<br>GMC</p>
+                    </div>
+                    <div class="btn" style="background-color: #f5beb4; width: 8em;">
+                        <p>SSWRP_<br>GMC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="column">
+        <div class="depart" id="FABSTBY">
+            <button class="wirtemode yellowborder" style="background-color: #dedefc; margin-right: 0;">
+                <p>SSWRP_FABSTBY</p>
+            </button>
+            <div class="square" style="margin-left: 0;">
+                <button style="background-color: #dedefc;">
+                    <p>SSWRP<br>_CPUACC</p>
+                </button>
+                <button style="background-color: #ded6d6;">
+                    <p>SSWRP<br>_GDMC</p>
+                </button>
+                <button style="background-color: #fcf1de; height: 7em">
+                    <p>SSWRP<br>_AOC</p>
+                </button>
+                <button style="background-color: #b9daef;">
+                    <p>SSWRP<br>_LSIO_N</p>
+                </button>
+                <button style="background-color: #ded6d6; height: 7em;">
+                    <p>SSWRP<br>_CPM</p>
+                </button>
+                <button style="background-color: #dedefc;">
+                    <p>SSWRP<br>_BMSM</p>
+                </button>
+                <button style="background-color: #d5d5f2;">
+                    <p>SSWRP<br>_GSA</p>
+                </button>
+                <button style="background-color: #d593f9;">
+                    <p>SSWRP<br>_HSIO_N</p>
+                </button>
+                <button style="background-color: #d5d5f2;">
+                    <p>SSWRP<br>_GPCA</p>
+                </button>
+            </div>
+        </div>
+    </div> -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
